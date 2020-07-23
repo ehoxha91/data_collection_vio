@@ -1,23 +1,18 @@
-# ROS Data Collection for Kinnect2
-A simple synchronized data collection for kinnect2, using ROS. 
+# ROS Data Collection for RGBD Cameras and IMU
 
 ### 
 
 - `cd ~/catkin_ws/src/`
-- `git clone https://github.com/ehoxha91/rgbd_subscriber.git`
+- `git clone https://github.com/ehoxha91/data_collection_vio.git`
 
 ### Build
 
-To build do these steps:
-- `cd ~/catkin_ws/`
+To build do:
 - `catkin_make`
 
 ### Run
-First:
-- `cd ~/catkin_ws/src/rgbd_subscriber/`
-- `source launchkinect`
 
-Second:
-- `rosrun rgbd_subscriber rgbd_subscriber_node`
+- `rosrun data_collection_vio rgbd_node`
+- `rosrun data_collection_vio imu_node`
 
-Make sure you specify your data collection folder, otherwise data will be saved into catkin_ws.
+
