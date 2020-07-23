@@ -37,7 +37,7 @@ void callback(const sensor_msgs::ImuConstPtr& imu_accel, const sensor_msgs::ImuC
     std::stringstream ss;
     ss << h.stamp;
     file << ss.str() <<" "<< toString(imu_a) <<" "<< toString(imu_w) <<std::endl;
-    ROS_INFO("Received data %s", ss.str());
+    ROS_INFO("IMU data received!");
   }
   catch(const std::exception& e)
   {
