@@ -22,13 +22,6 @@ int _index = 0;
 
 std::ofstream file;
 
-static string toString(const Eigen::VectorXd& mat)
-{
-    std::stringstream ss;
-    ss << mat.transpose();
-    return ss.str();
-}
-
 void callback(const ImageConstPtr& rgb_img, const ImageConstPtr& depth_img)
 {
   try
